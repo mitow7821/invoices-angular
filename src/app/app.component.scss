@@ -1,0 +1,12 @@
+@import "../styles/variables.scss";
+
+#app-wrapper {
+    display: flex;
+    height: 100%;
+    overflow: hidden;
+
+    @media (max-width: $breakpoint-mobile) {
+        background: red;
+        flex-direction: column;
+    }
+}

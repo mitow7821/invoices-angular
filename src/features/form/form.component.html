@@ -1,0 +1,4 @@
+<div [ngSwitch]="formType" *ngIf="formType">
+    <app-add-invoice *ngSwitchCase="'add'"></app-add-invoice>
+    <app-edit-invoice *ngSwitchCase="'edit'"></app-edit-invoice>
+</div>

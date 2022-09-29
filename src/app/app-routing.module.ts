@@ -15,11 +15,6 @@ const routes: Routes = [
     loadChildren: () =>
       import('../features/details/details.module').then((m) => m.DetailsModule),
   },
-  {
-    path: 'invoice',
-    loadChildren: () =>
-      import('../features/forms/forms.module').then((m) => m.FormsModule),
-  },
   { path: '**', component: NotFoundComponent },
 ];
 
